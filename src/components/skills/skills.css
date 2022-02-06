@@ -1,0 +1,83 @@
+.a {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.a-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.ab-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.a-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.a-card.bg {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    background-color: #212b33;
+}
+
+.a-card {
+    width: 50%;
+    height: 50vh;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.a-right p{
+    color: #0083ff;
+}
+
+li{
+    font-weight: 300;
+    padding: .2rem 0;
+}
+
+ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.a-icon{
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .a{
+        padding: 50px 0;
+    }
+
+    .a-left{
+        display: none;
+    }
+
+    .a{
+        height: auto;
+    }
+
+    .a-right{
+        align-items: flex-start;
+    }
+}

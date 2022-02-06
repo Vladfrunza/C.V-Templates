@@ -1,0 +1,35 @@
+.c{
+    position: relative;
+}
+
+.c-bg{
+    width: 20px;
+    height: 100%;
+    background-color:#59b256;
+    position: absolute;
+}
+
+.c-wrapper{
+    padding: 50px;
+    display: flex;
+}
+
+.c-left h1{
+    font-size: 30px;
+    color: #007bff;
+}
+
+.c-info-item {
+    font-size: 16px;
+    padding: 5px;
+}
+
+.c-info-item :first-child{
+    color: #0093ff;
+    padding-right: 8px;
+}
+
+.c-info-item a,
+.c-info-item a:hover {
+    text-decoration: none;
+}
